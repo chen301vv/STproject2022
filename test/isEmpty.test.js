@@ -28,4 +28,19 @@ describe("Is object Empty", () => {
     it("object is a library", () => {
         expect(isEmpty({ 'a': 1 })).to.equal(false);
     });
+
+    it("object is a map", () => {
+        const map = new Map();
+        expect(isEmpty(map)).to.equal(true);
+    });
+
+    it("object is a set", () => {
+        const set = new Set();
+        expect(isEmpty(set)).to.equal(true);
+    });
+
+    it("object is a prototype", () => {
+        function prototype() {};
+        expect(isEmpty(prototype())).to.equal(true);
+    });
 })

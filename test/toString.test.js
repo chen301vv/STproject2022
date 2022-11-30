@@ -18,6 +18,9 @@ describe("Converts `value` to a string", () => {
     });
 
     it("object is a symbol", () => {
-        expect(toString(',')).to.equal(',');
+        const sym = Symbol('foo');
+        expect(toString(sym)).to.equal('Symbol(foo)');
     });
+
+
 })
