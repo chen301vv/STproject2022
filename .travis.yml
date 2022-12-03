@@ -5,6 +5,8 @@ node_js:
 install:
   - npm install mocha
   - npm install chai
-  - npm install
+	- npm install istanbul@1.1.0-alpha.1 --save-dev
+  - npm install c8 -g
+	- npm install
 script:
-  - mocha
+  - npx c8 mocha
