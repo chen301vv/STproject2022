@@ -3,7 +3,7 @@ import endsWith from "../src/endsWith.js"
 
 const expect = chai.expect
 
-describe("Divides two numbers.", () => {
+describe("Arrays of endsWith.", () => {
     it("ends with target", () => {
         expect(endsWith('abc', 'c')).to.equal(true);
     });
