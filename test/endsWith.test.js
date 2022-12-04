@@ -20,5 +20,8 @@ describe("Divides two numbers.", () => {
         expect(endsWith('abc', 'b', 1)).to.equal(false);
     });
 
+    it("empty array", () => {
+        expect(endsWith('', '')).to.equal(true);
+    });
     
 })
