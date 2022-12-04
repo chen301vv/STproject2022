@@ -23,5 +23,9 @@ describe("Arrays of endsWith.", () => {
     it("empty array", () => {
         expect(endsWith('', '')).to.equal(true);
     });
+
+    it("a number assigned is negative", () => {
+        expect(endsWith('abc', 'a', -1)).to.equal(false);
+    });
     
 })
