@@ -3,7 +3,7 @@ name: STproject2022-github-actions
 run-name: testing if the codes pass
 on: [push]
 jobs:
-  check-bats-version:
+  STproject2022-version:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
